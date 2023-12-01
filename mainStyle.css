@@ -1,0 +1,150 @@
+     /* Style the <ul> containing the navigation items */
+ul.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style each <li> item in the navigation */
+.nav-item {
+    margin-right: 20px; /* Add margin between items */
+}
+
+/* Style the links inside <a> elements */
+.nav-link {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold; /* Font weight (optional) */
+    font-size: 16px; /* Font size (optional) */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+
+    /* Optional: Add padding and background color on hover */
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Change link color on hover */
+.nav-link:hover {
+    color: #007BFF; /* Change to the desired hover color */
+}
+
+      nav {
+            background-color: white;
+        }
+
+        ul .navbarNav {
+            color: #007BFF;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        .navbarNav .nav-link {
+            color: #333;
+        }
+
+        /* Additional styles for navigation links */
+        .nav-item {
+            margin-left: 0px;
+        }
+         .navbar-nav ul {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            margin-right: 20px;
+        }
+a{
+    text-decoration:none
+}
+        .auction-item {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .auction-item h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+
+        .add-product-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-product-button:hover {
+            background-color: #0056b3;
+        }
+
+        .auction-item-card {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .auction-item-card img {
+            width: 250px;
+            height: 250px;
+            
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .auction-item-info {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .item-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-description {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .category, .current-bid, .seller, .time-left{
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+             margin-top: 190px;
+    margin-right: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
