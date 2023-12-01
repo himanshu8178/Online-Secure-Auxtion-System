@@ -42,11 +42,11 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
-$mail->Username = 'himanshu.21scse1010370@galgotiasuniversity.edu.in'; // Your email address
-$mail->Password = 'GU@54321'; // Your email password
+$mail->Username = 'Your email'; // Your email address
+$mail->Password = 'Your password'; // Your email password
 
 // Set the sender's email address
-$mail->setFrom('himanshu.21scse1010370@galgotiasuniversity.edu.in', 'Himanshu'); // Replace with your information
+$mail->setFrom('Your email', 'Your name'); // Replace with your information
 
 // Add a recipient
 $mail->addAddress($email);
