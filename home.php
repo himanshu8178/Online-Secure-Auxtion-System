@@ -8,7 +8,8 @@ if (isset($_SESSION["user_id"])) {
     exit();
 } else {
     // If not logged in, redirect to the main page
-    header("Location: main.php");
+    header("Location: index.php");
     exit();
 }
 ?>
+
