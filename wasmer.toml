@@ -1,0 +1,23 @@
+[package]
+name = "auxtion"
+version = "1.0.0"
+
+[dependencies]
+
+[fs]
+# Mount your app files into the container
+"/app" = "."
+
+[command]
+# Run PHP in your Wasmer container
+bin = "php"
+args = ["-S", "0.0.0.0:8080", "-t", "/app"]
+
+[permissions]
+# Allow outbound TCP to your DB
+net = [
+  { outbound = ["db.us-losa1.bengt.wasmernet.com:16751"] }
+]
+
+# If you need outbound to anywhere (less secure, but quick for testing)
+# net = "inherit"
