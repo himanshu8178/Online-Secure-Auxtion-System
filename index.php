@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
 
     <!-- Custom CSS for the navigation bar and product cards -->
-    
     <link rel="stylesheet" href ="mainStyle.css" >
 </head>
 <body>
@@ -119,6 +118,7 @@ echo "✅ Connected successfully to database: " . htmlspecialchars($dbname);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.t.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 
