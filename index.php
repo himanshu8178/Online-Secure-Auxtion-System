@@ -55,8 +55,21 @@
                    <?php
 
     // Establish a database connection (replace with your database credentials)
-$conn = new mysqli("db.us-losa1.bengt.wasmernet.com", "cec884e7769a8000733ed96588b6", "0689cec8-84e7-7894-8000-aff73c164f3b", "dbVdvAmu3s99qi6Um8tJ6MwC", 16751);
+$host = getenv("DB_HOST");
+$dbname = getenv("DB_NAME");
+$user = getenv("DB_USERNAME");
+$pass = getenv("DB_PASSWORD");
+$port = getenv("DB_PORT");
 
+// Create MySQL connection
+$conn = new mysqli($host, $user, $pass, $dbname, (int)$port);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+echo "✅ Connected successfully to database: " . htmlspecialchars($dbname);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -107,6 +120,7 @@ $conn = new mysqli("db.us-losa1.bengt.wasmernet.com", "cec884e7769a8000733ed9658
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.t.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 
