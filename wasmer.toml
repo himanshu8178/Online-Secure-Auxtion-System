@@ -17,6 +17,4 @@ args = ["-S", "0.0.0.0:8080", "-t", "/app"]
 
 [permissions]
 # Allow outbound TCP to your DB
-net = [
-  { outbound = ["db.us-losa1.bengt.wasmernet.com:16751"] }
-]
+net = inherit
