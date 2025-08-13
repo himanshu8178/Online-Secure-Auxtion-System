@@ -3,14 +3,16 @@ name = "auxtion"
 version = "1.0.0"
 
 [dependencies]
+"php/php-32" = "8.2.0"
 
 [fs]
 # Mount your app files into the container
 "/app" = "."
 
-[command]
-# Run PHP in your Wasmer container
-bin = "php"
+[[command]]
+name = "web"
+module = "php/php-32"
+runner = "php"
 args = ["-S", "0.0.0.0:8080", "-t", "/app"]
 
 [permissions]
@@ -18,6 +20,3 @@ args = ["-S", "0.0.0.0:8080", "-t", "/app"]
 net = [
   { outbound = ["db.us-losa1.bengt.wasmernet.com:16751"] }
 ]
-
-# If you need outbound to anywhere (less secure, but quick for testing)
-# net = "inherit"
